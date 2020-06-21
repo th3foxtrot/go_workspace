@@ -51,12 +51,12 @@ func main() {
 	}
 	defer tex.Destroy()
 
-	spriteSheet, err := os.Open("test.png")
-	if err != nil {
-		fmt.Println(err)
-		return
-	}
-	defer spriteSheet.Close()
+	//spriteSheet, err := os.Open("test.png")
+	//if err != nil {
+	//	fmt.Println(err)
+	//	return
+	//}
+	//defer spriteSheet.Close()
 
 	imageData, imageType, err := image.Decode(spriteSheet)
 	if err != nil {
